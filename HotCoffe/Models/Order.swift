@@ -26,5 +26,4 @@ struct Order: Codable {
     let email: String
     let type: CoffeeType
     let size: CoffeeSize
-    
 }

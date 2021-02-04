@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB3EBEAE25CB9A76005CA0EC /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3EBEAD25CB9A76005CA0EC /* OrderViewModel.swift */; };
+		DB3EBEB125CBB973005CA0EC /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3EBEB025CBB973005CA0EC /* AddCoffeeOrderViewModel.swift */; };
 		DB47A63925CA664200962419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47A63825CA664200962419 /* AppDelegate.swift */; };
 		DB47A63B25CA664200962419 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47A63A25CA664200962419 /* SceneDelegate.swift */; };
 		DB47A64025CA664200962419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB47A63E25CA664200962419 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB3EBEAD25CB9A76005CA0EC /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		DB3EBEB025CBB973005CA0EC /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
 		DB47A63525CA664200962419 /* HotCoffe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCoffe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB47A63825CA664200962419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB47A63A25CA664200962419 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB3EBEAC25CB9A68005CA0EC /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB3EBEAD25CB9A76005CA0EC /* OrderViewModel.swift */,
+				DB3EBEB025CBB973005CA0EC /* AddCoffeeOrderViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		DB47A62C25CA664200962419 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +75,7 @@
 		DB47A63725CA664200962419 /* HotCoffe */ = {
 			isa = PBXGroup;
 			children = (
+				DB3EBEAC25CB9A68005CA0EC /* View Models */,
 				DBD1DAA325CA86B100005557 /* Models */,
 				DBD1DA9E25CA791200005557 /* Services */,
 				DB47A64E25CA667500962419 /* Controllers */,
@@ -171,10 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBD1DAA525CA86C100005557 /* Order.swift in Sources */,
+				DB3EBEB125CBB973005CA0EC /* AddCoffeeOrderViewModel.swift in Sources */,
 				DB47A63925CA664200962419 /* AppDelegate.swift in Sources */,
 				DB47A63B25CA664200962419 /* SceneDelegate.swift in Sources */,
 				DB47A65125CA679C00962419 /* OrdersTableViewController.swift in Sources */,
 				DBD1DAA025CA79CF00005557 /* Webservice.swift in Sources */,
+				DB3EBEAE25CB9A76005CA0EC /* OrderViewModel.swift in Sources */,
 				DB47A65425CA67D500962419 /* AddOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
