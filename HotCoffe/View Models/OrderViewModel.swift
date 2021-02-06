@@ -8,22 +8,19 @@
 import Foundation
 
 class OrderListViewModel {
- 
-    var ordersViewModel: [OrderViewModel]
+    var ordersListViewModel: [OrderViewModel]
     
     init() {
-        self.ordersViewModel = [OrderViewModel]()
+        self.ordersListViewModel = [OrderViewModel]()
     }
-    
 }
 
 extension OrderListViewModel {
-    
-    func orderViewModel(at index: Int) -> OrderViewModel {
-        return self.ordersViewModel[index]
+    func orderViewModel(at index: Int)->OrderViewModel{
+        return self.ordersListViewModel[index]
     }
-    
 }
+
 
 struct OrderViewModel {
     let order: Order
@@ -32,19 +29,18 @@ struct OrderViewModel {
 extension OrderViewModel {
     
     var name: String {
-        return self.order.name
+        return order.name
     }
     
     var email: String {
-        return self.order.email
+        return order.email
     }
     
-    var type: String {
-        return self.order.type.rawValue.capitalized
+    var coffeeType: String {
+        return order.type.rawValue.capitalized
     }
     
-    var size: String {
-        return self.order.size.rawValue.capitalized
+    var coffeeSize: String {
+        return order.size.rawValue.capitalized
     }
-    
 }

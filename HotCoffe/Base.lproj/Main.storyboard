@@ -62,7 +62,7 @@
         <!--Add New Order-->
         <scene sceneID="WxW-qp-tQ5">
             <objects>
-                <viewController id="VkE-cM-wxb" customClass="AddOrderNewController" customModule="HotCoffe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VkE-cM-wxb" customClass="AddOrderViewController" customModule="HotCoffe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GkB-Od-beg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -118,17 +118,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="F9C-jT-f0X">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="Esh-dy-qlM"/>
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="Esh-dy-qlM">
+                            <connections>
+                                <action selector="close" destination="VkE-cM-wxb" id="Hib-HI-Ssb"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="nQy-bQ-ZhM">
                             <connections>
-                                <action selector="save" destination="VkE-cM-wxb" id="we0-n0-RhM"/>
+                                <action selector="save:" destination="VkE-cM-wxb" id="K51-58-FtC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="emailTextField" destination="Wia-oc-VE2" id="sI9-8z-eDR"/>
-                        <outlet property="nameTextField" destination="U2Y-4H-Rkh" id="ye1-Tj-WqO"/>
-                        <outlet property="tableView" destination="FdE-H3-Y3i" id="C0Z-Hi-wXg"/>
+                        <outlet property="emailTextField" destination="Wia-oc-VE2" id="7dI-0J-x74"/>
+                        <outlet property="nameTextField" destination="U2Y-4H-Rkh" id="NGh-2w-7fX"/>
+                        <outlet property="tableView" destination="FdE-H3-Y3i" id="ZUw-rc-wGU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcj-Pz-Ttx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
